@@ -174,7 +174,6 @@ classes_fromModel <- function(df, feature_name, model)
   }
 
   colnames(df) <- c("sample", "value")
-  df$value <- as.integer(df$value)
 
   if (grepl("1p", possible_features[possible_features$name == feature_name, "transformation"]))
   {
@@ -222,7 +221,11 @@ MM_fromModel <- function(df, feature_name, model)
   {
     postDatUnscaled = sapply(1:nrow(model), function(x) dnorm(x=dat, model[[x ,"mean"]], model[[x ,"sd"]]))
   } else {
-    postDatUnscaled = sapply(1:nrow(model), function(x) dpois(x = dat, lambda = model[[x,"mean"]]) )
+    postDatUnscaled = sapply(1:nrow(model), function(x) dpois(x=dat, lambda = model[[x ,"mean"]]))
+    
+    # postDatUnscaled = sapply(1:nrow(model), function(x) {
+    #   model$prior[x] * dpois(x = dat, lambda = model$mean[x])
+    #   })
   }
 
   postDatScaled = data.frame( postDatUnscaled / rowSums(postDatUnscaled) )

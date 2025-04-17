@@ -9,9 +9,9 @@
 #
 # This code is for academic non-commercial use only.
 
-chrlen <- read.table(system.file("data", "hg38.chrom.sizes.txt"),
+chrlen <- read.table(file.path("your/path/CIN-subtypes/data", "hg38.chrom.sizes.txt"),
                      sep="\t",stringsAsFactors = F)[1:24,]
-centromeres <- read.table(system.file("data", "hg38.centromeres.txt"),
+centromeres <- read.table(file.path("your/path/CIN-subtypes/data", "hg38.centromeres.txt"),
                      sep="\t", header=T)
 
 #' Extraction of the 5MB breakpoint counts
@@ -81,32 +81,50 @@ bp5MB_discretize <- function(df, seed, plot = F)
   control<-new("FLXcontrol")
   control@minprior<-0.001
   control@iter.max<-1000
-
+  
   fit<-stepFlexmix(dat ~ 1,model = flexmix::FLXMCmvpois(),k=1:10,nrep=1,control=control,verbose=F)
   fit<-getModel(fit,which="BIC")
-
+  
+  priors <- flexmix::prior(fit)
   posteriors <- flexmix::posterior(fit) %>% as.data.frame()
-
+  
   #Calculate the model of the fit (Poisson)
-  metrics_df <- data.frame(value = df$value, group = fit@cluster)
+  metrics_df <- data.frame(value = df$value, cluster = fit@cluster)
   metrics_df <- metrics_df %>%
-    group_by(group) %>%
-    summarize(mean=mean(value), min=min(value), max=max(value), .groups = "drop") %>%
+    group_by(cluster) %>%
+    summarize(mean = mean(value),
+              min = min(value),
+              max = max(value),
+              .groups = "drop")
+  # Add the priors using the original cluster number
+  metrics_df$prior <- priors[metrics_df$cluster]
+  # Now sort by mean breakpoint count
+  metrics_df <- metrics_df %>%
     arrange(mean) %>%
-    mutate(line = (min - lag(max, default = 0))/2 + max) %>%
-    as.data.frame()
-  metrics_df$group <- paste0(rep("fiveMB", nrow(metrics_df)), seq(1, nrow(metrics_df)))
-
+    mutate(line = (min - lag(max, default = 0)) / 2 + max,
+           group = paste0("fiveMB", row_number()))
+  # Add a new label that represents the class name in order
+  metrics_df$group <- paste0("fiveMB", seq_len(nrow(metrics_df)))
+  
   #create plotting elements
   lines <- log1p(metrics_df$line)
   lines <- c(0.4, lines[2:(length(lines)-1)])
-  metrics_df <- metrics_df %>% dplyr::select(-min, -max, -line)
-
+  metrics_df <- metrics_df %>% dplyr::select(cluster, group, mean, prior)
+  
   #Understand which group every observation belongs to and boundaries of the groups:
-  colnames(posteriors) <- paste0(rep("fiveMB", ncol(posteriors)), seq(1, ncol(posteriors)))
-
+  comp_to_group <- metrics_df %>% select(cluster, group)
+  
+  # Rename posterior columns (e.g., V.1 → fiveMBX)
+  for (i in 1:nrow(comp_to_group)) {
+    comp_col <- paste0("V", comp_to_group$cluster[i])
+    group_name <- comp_to_group$group[i]
+    if (comp_col %in% colnames(posteriors)) {
+      colnames(posteriors)[colnames(posteriors) == comp_col] <- group_name
+    }
+  }
+  
   posteriors$group <- colnames(posteriors)[apply(posteriors,1,which.max)]
-
+  
   df$group <- posteriors$group
   discr <- df %>%
     group_by(sample, group) %>%
