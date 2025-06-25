@@ -1,0 +1,100 @@
+vcfId	svId	clusterId	clusterReason	fragileSiteStart	fragileSiteEnd	isFoldback	lineTypeStart	lineTypeEnd	junctionCopyNumberMin	junctionCopyNumberMax	geneStart	geneEnd	localTopologyIdStart	localTopologyIdEnd	localTopologyStart	localTopologyEnd	localTICountStart	localTICountEnd
+purple_0	2	28		false	false	false	NONE	NONE	0.4663	1.0397			0	-1	ISOLATED_BE		0	0
+purple_1	3	32		false	false	false	NONE	NONE	0.4573	1.0307	ZRANB2-AS2		0	-1	ISOLATED_BE		0	0
+purple_2	4	0		false	false	false	NONE	NONE	0.3978	1.1862			0	-1	ISOLATED_BE		0	0
+purple_3	5	6		false	false	false	NONE	NONE	0.4758	1.2642	DYRK3;MAPKAPK2		0	-1	ISOLATED_BE		0	0
+gridss21bf_15760o	6	64		false	false	false	NONE	NONE	0.6205	1.1815	RCOR3	LPGAT1	0	1	ISOLATED_BE	ISOLATED_BE	0	0
+purple_4	8	14		false	false	false	NONE	NONE	0.5143	1.1217	LINC01320		0	-1	ISOLATED_BE		0	0
+purple_5	9	34		false	false	false	NONE	NONE	0.5173	1.1247	LINC01320		0	-1	ISOLATED_BE		0	0
+gridss31bf_78o	10	66		false	false	false	NONE	NONE	0.7340	1.1580	PAPOLG	WDPCP	0	1	ISOLATED_BE	ISOLATED_BE	0	0
+purple_6	11	67	TI_JCN_MATCH-14	false	false	false	NONE	NONE	0.6565	1.3155	TMEM87B		0	-1	ISOLATED_BE		0	0
+purple_7	12	39		false	false	false	NONE	NONE	0.5266	1.3994	ZC3H8		0	-1	ISOLATED_BE		0	0
+purple_8	13	38		false	false	false	NONE	NONE	0.6937	1.5463			0	-1	ISOLATED_BE		0	0
+purple_9	14	67	TI_JCN_MATCH-11	false	false	false	NONE	NONE	0.5417	1.1303			1	-1	ISOLATED_BE		0	0
+gridss46fb_75729o	15	69		false	false	false	NONE	NONE	-0.4706	1.5986	NHEJ1	NHEJ1	0	0	DSB	DSB	0	0
+gridss54bf_62106o	16	58		false	false	false	NONE	NONE	0.6841	1.1009	CACNA2D3	SLMAP;PDHA1P1	0	1	ISOLATED_BE	ISOLATED_BE	0	0
+purple_10	17	60		false	false	false	NONE	NONE	0.5984	0.9976	POLR2B		0	-1	ISOLATED_BE		0	0
+unbalanced_0	18	10		false	false	false	NONE	NONE	-0.5971	3.1371			0	-1	ISOLATED_BE		0	0
+unbalanced_2	19	7		false	false	false	NONE	NONE	-0.4552	3.6552			0	-1	ISOLATED_BE		0	0
+gridss75bf_50533o	20	62	LOH_CHAIN-71	false	false	false	NONE	NONE	0.6691	1.0733		BMPR1B	3	5	ISOLATED_BE	ISOLATED_BE	0	0
+purple_11	21	26		false	false	false	NONE	NONE	0.6360	1.0960			0	-1	ISOLATED_BE		0	0
+purple_12	22	37		false	false	false	NONE	NONE	0.6220	1.0820			0	-1	ISOLATED_BE		0	0
+gridss3bf_3201o	23	50		false	false	false	NONE	NONE	0.6779	1.0129			1	0	ISOLATED_BE	ISOLATED_BE	0	0
+purple_13	24	42		false	false	false	NONE	NONE	0.6075	1.2385	CDH9		0	-1	ISOLATED_BE		0	0
+purple_14	25	41		false	false	false	NONE	NONE	0.5655	1.1965	PURPL		0	-1	ISOLATED_BE		0	0
+gridss100bf_10219o	26	51		false	false	false	NONE	NONE	0.5651	1.0019			0	1	ISOLATED_BE	ISOLATED_BE	0	0
+unbalanced_1	27	52	PROXIMITY-28	false	false	false	NONE	NONE	-0.4614	2.9014			0	-1	DSB		0	0
+gridss106bf_32038o	28	52	PROXIMITY-27	false	false	false	NONE	NONE	0.1706	2.4264			0	1	DSB	ISOLATED_BE	0	1
+gridss106bb_25756o	29	52	PROXIMITY-28	false	false	false	NONE	NONE	-0.2052	1.9112			1	1	ISOLATED_BE	ISOLATED_BE	1	1
+purple_15	30	22		false	false	false	NONE	NONE	0.4479	0.9081			0	-1	ISOLATED_BE		0	0
+purple_16	31	5		false	false	false	NONE	NONE	0.4152	0.8388	LY86-AS1		0	-1	ISOLATED_BE		0	0
+gridss114bf_31596o	34	53		false	false	false	NONE	NONE	0.3963	0.7897	PGM3;RWDD2A		0	1	ISOLATED_BE	ISOLATED_BE	0	0
+purple_17	35	54	TI_JCN_MATCH-39	false	false	false	NONE	NONE	0.3691	0.7829	RPS7P8;RNU4-70P;TYMSP1		1	-1	ISOLATED_BE		0	0
+purple_18	36	19		false	false	false	NONE	NONE	0.8554	1.3846			0	-1	ISOLATED_BE		0	0
+purple_19	37	8		false	false	false	NONE	NONE	0.3877	0.9203			0	-1	ISOLATED_BE		0	0
+purple_20	38	56		false	false	false	NONE	NONE	0.3202	0.7218	GRIK2		0	-1	ISOLATED_BE		0	0
+gridss115bb_21717o	39	54	TI_JCN_MATCH-40	false	false	false	NONE	NONE	-0.0299	0.5773			0	2	ISOLATED_BE	ISOLATED_BE	0	0
+purple_21	40	54	TI_JCN_MATCH-39	false	false	false	NONE	NONE	0.2634	0.6766			3	-1	ISOLATED_BE		0	0
+purple_22	44	46		false	false	false	NONE	NONE	0.6166	1.0194			0	-1	ISOLATED_BE		0	0
+purple_23	45	47		false	false	false	NONE	NONE	0.4303	1.0217	SAPCD2P2		0	-1	ISOLATED_BE		0	0
+purple_24	46	2		false	false	false	NONE	NONE	0.8140	1.5060	GTF2IRD1		0	-1	ISOLATED_BE		0	0
+purple_25	47	24		false	false	false	NONE	NONE	0.8240	1.5160			0	-1	ISOLATED_BE		0	0
+purple_26	48	18		false	false	false	NONE	NONE	0.7079	1.3521			0	-1	ISOLATED_BE		0	0
+purple_27	49	30		false	false	false	NONE	NONE	0.6779	1.3221	TRIP6;SRRT		0	-1	ISOLATED_BE		0	0
+purple_28	50	44		false	false	false	NONE	NONE	0.5238	1.1042			0	-1	ISOLATED_BE		0	0
+purple_29	51	1		false	false	false	NONE	NONE	0.5478	1.1282			0	-1	ISOLATED_BE		0	0
+purple_30	52	36		false	false	false	NONE	NONE	0.8022	1.2978	LINC02894;ESRP1		0	-1	ISOLATED_BE		0	0
+purple_31	53	33		false	false	false	NONE	NONE	0.7749	1.2651	SAMD12		0	-1	ISOLATED_BE		0	0
+purple_32	54	13		false	false	false	NONE	NONE	0.6992	1.1148	SMU1		0	-1	ISOLATED_BE		0	0
+purple_33	55	25		false	false	false	NONE	NONE	0.7096	1.1564			0	-1	ISOLATED_BE		0	0
+purple_34	56	35		false	false	false	NONE	NONE	0.2230	0.6310	PLPP4		0	-1	ISOLATED_BE		0	0
+purple_35	57	16		false	false	false	NONE	NONE	0.2662	0.6838	DMBT1L1		0	-1	ISOLATED_BE		0	0
+purple_36	58	27		false	false	false	NONE	NONE	0.6889	1.2611			0	-1	ISOLATED_BE		0	0
+purple_37	59	17		false	false	false	NONE	NONE	0.6289	1.2011			0	-1	ISOLATED_BE		0	0
+purple_38	60	63		false	false	false	NONE	NONE	0.3173	0.7107			0	-1	ISOLATED_BE		0	0
+purple_39	61	3		false	false	false	NONE	NONE	0.5280	1.1560			0	-1	ISOLATED_BE		0	0
+purple_40	62	11		false	false	false	NONE	NONE	0.5300	1.1580			0	-1	ISOLATED_BE		0	0
+gridss200fb_11169o	63	65		false	false	false	NONE	NONE	0.2033	2.2767	DNAJC14;TMEM198B	DNAJC14	0	0	DSB	DSB	0	0
+purple_41	64	4		false	false	false	NONE	NONE	0.5007	1.1053	KIF5A		0	-1	ISOLATED_BE		0	0
+purple_42	65	21		false	false	false	NONE	NONE	0.4997	1.1043			0	-1	ISOLATED_BE		0	0
+purple_43	66	9		false	false	false	NONE	NONE	2.3004	3.5796			0	-1	ISOLATED_BE		0	0
+purple_44	67	43		false	false	false	NONE	NONE	2.0862	3.7738			0	-1	ISOLATED_BE		0	0
+purple_45	68	82		false	false	false	NONE	NONE	0.9986	2.3214			0	-1	ISOLATED_BE		0	0
+purple_46	69	83		false	false	false	NONE	NONE	2.8861	3.8739			0	-1	ISOLATED_BE		0	0
+gridss145bb_26881o	70	48		false	false	false	NONE	NONE	-0.2021	0.8064	RRS1-DT;ADHFE1	THSD4	0	1	ISOLATED_BE	ISOLATED_BE	0	0
+gridss77ff_20637o	71	62	LOH-97;LOH_CHAIN-20	false	false	false	NONE	NONE	0.6791	1.0804		ADPGK	4	1	ISOLATED_BE	ISOLATED_BE	0	0
+purple_47	72	15		false	false	false	NONE	NONE	0.5116	1.0924	PDE8A		0	-1	ISOLATED_BE		0	0
+purple_48	73	45		false	false	false	NONE	NONE	0.5536	1.1344	AGBL1		0	-1	ISOLATED_BE		0	0
+purple_49	74	84		false	false	false	NONE	NONE	0.6112	1.0108			0	-1	ISOLATED_BE		0	0
+gridss239fb_26778o	75	85		false	false	false	NONE	NONE	-0.0420	1.9590			0	0	DSB	DSB	0	0
+unbalanced_4	78	86	PROXIMITY-82	false	false	false	NONE	NONE	-0.7113	2.7113			0	-1	DSB		1	0
+gridss243fb_15073o	79	86	PROXIMITY-78	false	false	false	NONE	NONE	0.5300	0.5300			0	0	DSB	DSB	1	1
+unbalanced_3	80	86	PROXIMITY-81	false	false	false	NONE	NONE	-0.5979	3.1379	BCKDK		1	-1	DSB		0	0
+gridss243fb_16614o	81	86	PROXIMITY-80	false	false	false	NONE	NONE	0.5311	3.1121	VKORC1;BCKDK	TRIM72;PYDC1	1	2	DSB	TI_ONLY	0	1
+gridss243bf_11370o	82	86	PROXIMITY-78	false	false	false	NONE	NONE	0.6757	3.1463		TRIM72;PYDC1	0	2	DSB	TI_ONLY	1	1
+purple_50	83	12		false	false	false	NONE	NONE	1.1939	1.7661			0	-1	ISOLATED_BE		0	0
+purple_51	84	31		false	false	false	NONE	NONE	1.1939	1.7661	CCNYL3;CLUHP11		0	-1	ISOLATED_BE		0	0
+gridss250fb_21597o	85	88		false	false	false	NONE	NONE	0.5867	0.9223	MAP2K4	MAP2K4	0	1	ISOLATED_BE	ISOLATED_BE	0	0
+gridss250f_195547b	86	89	PROXIMITY-87	false	false	false	NONE	NONE	0.1845	3.8155	COX10-DT		0	-1	DSB		0	0
+unbalanced_5	87	89	PROXIMITY-86	false	false	false	NONE	NONE	0.2245	3.8555	COX10-DT		0	-1	DSB		0	0
+purple_52	88	90		false	false	false	NONE	NONE	0.3169	0.6591	DHX8		0	-1	ISOLATED_BE		0	0
+purple_53	89	91		false	false	false	NONE	NONE	0.5425	1.0435	EFCAB13		0	-1	ISOLATED_BE		0	0
+purple_54	90	92		false	false	false	NONE	NONE	0.6307	1.3213	YPEL2		0	-1	ISOLATED_BE		0	0
+purple_55	93	70		false	false	false	NONE	NONE	0.5685	1.1795	LDLRAD4		0	-1	ISOLATED_BE		0	0
+gridss262bf_787o	94	71		false	false	false	NONE	NONE	0.6316	1.0440	LINC00907		0	1	ISOLATED_BE	ISOLATED_BE	0	0
+gridss262bf_7642o	95	72		false	false	false	NONE	NONE	0.6736	1.1044	LINC01478	SETBP1	0	1	ISOLATED_BE	ISOLATED_BE	0	0
+gridss237bf_28149o	97	62	LOH-71	false	false	false	NONE	NONE	0.6593	0.9771		ATP9B	2	0	ISOLATED_BE	ISOLATED_BE	0	0
+purple_56	98	74		false	false	false	NONE	NONE	0.8623	1.3377			0	-1	ISOLATED_BE		0	0
+purple_57	99	75		false	false	false	NONE	NONE	0.2990	0.9110			0	-1	ISOLATED_BE		0	0
+purple_58	100	76		false	false	false	NONE	NONE	0.1784	0.9416			0	-1	ISOLATED_BE		0	0
+purple_59	101	78		false	false	false	NONE	NONE	0.7797	1.6203	ZNF536		0	-1	ISOLATED_BE		0	0
+purple_60	102	77	TI_JCN_MATCH-103	false	false	false	NONE	NONE	-0.0476	0.5236			1	-1	ISOLATED_BE		0	0
+gridss268bb_4700o	103	77	TI_JCN_MATCH-104	false	false	false	NONE	NONE	0.3190	0.8145	LINC00662		0	2	ISOLATED_BE	ISOLATED_BE	0	0
+purple_61	104	77	TI_JCN_MATCH-103	false	false	false	NONE	NONE	0.5050	1.1190	OVOL3;TBCB		3	-1	ISOLATED_BE		0	0
+purple_62	105	81		false	false	false	NONE	NONE	0.7274	1.1586	LIPE-AS1;CEACAM8		0	-1	ISOLATED_BE		0	0
+purple_63	107	23		false	false	false	NONE	NONE	0.6721	1.2719	SLC2A10		0	-1	ISOLATED_BE		0	0
+purple_64	108	29		false	false	false	NONE	NONE	0.6231	1.2229			0	-1	ISOLATED_BE		0	0
+gridss281bf_1241o	109	59		false	false	false	NONE	NONE	0.7291	1.1749			0	1	ISOLATED_BE	ISOLATED_BE	0	0
+gridss289bf_3531o	110	49		false	false	false	NONE	NONE	0.7923	1.1347	FRMPD4	FRMPD4	0	1	ISOLATED_BE	ISOLATED_BE	0	0
+purple_65	112	40		false	false	false	NONE	NONE	0.6977	1.0883			0	-1	ISOLATED_BE		0	0
+purple_66	113	20		false	false	false	NONE	NONE	0.6657	1.0563			0	-1	ISOLATED_BE		0	0

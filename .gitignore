@@ -1,1 +1,11 @@
 private_data/
+
+data/ignore/
+
+data/example/copy_files.sh
+data/example/mapping.tsv
+data/example/create_example.R
+
+code/.ipynb_checkpoints/
+
+.Rhistory

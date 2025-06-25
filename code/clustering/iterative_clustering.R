@@ -24,7 +24,8 @@ samples_info_file <- args[2]
 output_path <- args[3]
 
 # Read input files
-act <- read.table(activities_file, sep="\t", header=TRUE)
+act <- read.table(activities_file, sep="\t", header=TRUE) 
+colnames(act) <- gsub("\\.", "-", colnames(act))
 sample_info <- read.table(samples_info_file, sep="\t", header=TRUE)
 
 # Transform activities in proportions 
@@ -52,14 +53,14 @@ for(i in 1:20)
                             reps=1000, 
                             pItem=0.9, 
                             pFeature=1, 
-                            title = paste0("euW2_", i), 
+                            title = paste0(output_path, "/euW2_", i), 
                             clusterAlg="hc", 
                             distance="euclidean", 
                             innerLinkage="ward.D2", 
                             finalLinkage="ward.D2", 
                             seed=rand_seeds[i], 
                             plot="png")
-  saveRDS(r, paste0(output_path, "hc_eu.", i, ".rds"))
+  saveRDS(r, paste0(output_path, "/hc_eu.", i, ".rds"))
   print(paste0("Done iteration ", i))
 }
 print("Finished")

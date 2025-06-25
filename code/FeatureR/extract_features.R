@@ -1,5 +1,5 @@
-library(tidyverse)
 library(StructuralVariantAnnotation)
+library(tidyverse)
 library(ShatterSeek)
 
 # Set working directory to this repo

@@ -2,6 +2,7 @@ library(tidyverse)
 library(pheatmap)
 
 setwd("path/to/CIN-subtypes")
+output_path <- "path/to/output_dir"
 
 ######## Analysis of extracted or quantified signatures ######## 
 ### 1. Signatures definition
@@ -16,40 +17,51 @@ colnames(sigsM) <- sigs$MutationType
 sigsM <- round(sigsM * 1000, digits = 0)
 mode(sigsM) <- "numeric"
 
-pdf(file.path("output/path", "heatmap_signatures.pdf"), width = 10, height = 4)
+pdf(file.path(output_path, "heatmap_signatures.pdf"), width = 10, height = 4)
 pheatmap(sigsM, cluster_rows = F, cluster_cols = F, fontsize = 7, display_numbers = formatC(sigsM, format = "f", digits = 0))
 dev.off()
 
 ### 2. Intra-patient analysis
 # Load activities
-... ongoing
-activities <- read.table(file.path(act_path, "activities_set1-15.tsv"), sep="\t", header=T)
-sample_info <- read.table(file.path(home, "SCNA_Purple/resources/sample_info_extended_231004.csv"), sep="\t", header=T)
-activities_new <- activities |>
-  inner_join(sample_info[, c("sample","set")]) |>
-  mutate(set_type = ifelse(grepl("14|15", set), "new", "old")) |>
-  select(-set) |>
-  group_by(patient) |>
-  filter(any(set_type == "new")) |>
-  ungroup() |>
-  as.data.frame()
+activities <- read.table(file.path("data/example", "De_Novo_Solution/Activities/De_Novo_Activities.txt"), sep="\t", header=T) |>
+  rename(sample = Samples) |>
+  mutate(patient = sub( '^(\\w+\\d+)_([piro])(.*)', '\\1', sample)) |>
+  select(sample, patient, 2:12)
+colnames(activities) <- gsub("\\.", "-", colnames(activities))
 
-complete_colors <- c('#4ad66d','#9be564', '#ffe119', '#9a6324',  '#f58231', '#d80032','#FFC0CB','#f032e6', '#911eb4', '#4363d8', '#48cae4', '#ade8f4')
-for (i in unique(activities_new$patient))
+signature_colors <- c("SCN-A" = "#ff477e", "SCN-B" = "#ff99ac", "SCN-E" = "#f7cad0", "SCN-I" = "#68d8d6", "SCN-J" = "#c4fff9",
+                      "SCN-C" = "#9b72cf", "SCN-D" = "#ffc60a", "SCN-F" = "#60bf60", "SCN-H" = "#007fff", "SCN-G" = "#ab967d", "SCN-K" = "#b9b3af")
+
+for (i in unique(activities$patient))
 {
-  curr_df <- activities_new |>
+  curr_df <- activities |>
     filter(patient == i) |>
     gather(signature, value, 3:13) |>
-    mutate(sample = factor(sample, levels = unique(sample)))
+    mutate(sample = factor(sample, levels = unique(sample)),
+           signature = factor(signature, levels = c("SCN-A", "SCN-B", "SCN-E", "SCN-I", "SCN-J", "SCN-C", "SCN-D", "SCN-F", "SCN-H", "SCN-G", "SCN-K")))
   
-  sig_plot <- ggplot(curr_df, aes(x=sample, y=value, fill=signature, color = set_type)) +
+  sig_plot <- ggplot(curr_df, aes(x=sample, y=value, fill=signature)) +
     labs(title = paste0("Signatures in patient ", i)) +
     geom_bar(position="stack", stat="identity") +
-    scale_fill_manual(values = complete_colors) +
-    scale_color_manual(values = c("new" = "black", old = "white")) +
+    scale_fill_manual(values = signature_colors) +
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
           panel.background = element_blank(), axis.line = element_line(colour = "black"),
           axis.text.x = element_text(angle = 45, vjust = 1, hjust=1, size=6),
           plot.title = element_text(hjust=0.5, size = 10))
   ggsave(paste0(out_path, "/patients_plots/", i, ".png"), sig_plot, width = 20, height = 15, units = "cm", dpi="retina")
 }
+
+### 3. Variability of each signature in the cohort
+activities |>
+  gather(signature, value, 3:13) |>
+  mutate(signature = factor(signature, levels = c("SCN-A", "SCN-B", "SCN-E", "SCN-I", "SCN-J", "SCN-C", "SCN-D", "SCN-F", "SCN-H", "SCN-G", "SCN-K"))) |>
+  ggplot(aes(signature, value, fill = signature)) +
+  geom_boxplot() +
+  scale_fill_manual(values = signature_colors) +
+  labs(title = "Signature variabily in the cohort", y = "SCN activity") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.title.x = element_blank(),
+        axis.text = element_text(color = "black"))
+
+ggsave(file.path(out_path, "variability_signatures.png"), width = 20, height = 15, units = "cm", dpi="retina")

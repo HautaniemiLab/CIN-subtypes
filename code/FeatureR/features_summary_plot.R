@@ -34,16 +34,18 @@ stats <- data.frame(FeatureType = names(medians),
                     q75 = quantiles$`75%`)
 
 # Add the class column that groups features in categories
-stats[1:6, "Class"] <- "Event type"
-stats[7:12, "Class"] <- "Deletions' length"
-stats[12:15, "Class"] <- "Duplications' length"
-stats[16:21, "Class"] <- "SV type"
-stats[22:23, "Class"] <- "CNV weight"
-stats[24:26, "Class"] <- "Segment size"
-stats[27:31, "Class"] <- "Segments per 5Mb"
-stats[32:35, "Class"] <- "Oscillation length"
-stats[36:39, "Class"] <- "Segments per ChrArm"
-stats[40:44, "Class"] <- "Changepoint"
+stats$Class <- rep(c(
+  "Event type",
+  "Deletions' length",
+  "Duplications' length",
+  "SV type",
+  "CNV weight",
+  "Segment size",
+  "Segments per 5Mb",
+  "Oscillation length",
+  "Segments per ChrArm",
+  "Changepoint"
+), times = c(6, 6, 3, 6, 2, 3, 5, 4, 4, 5))
 stats$Class <- factor(stats$Class, levels=unique(stats$Class))
 
 # Color vectors
