@@ -1,0 +1,2383 @@
+
+
+
+
+
+                    ################ Sample 1 #################
+############################# Initial Composition ####################################
+   CH43D   CH43E  CH43F  CH43G  CH43H
+0  288.0  1072.0  487.0  575.0  334.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43D   CH43E  CH43F  CH43G  CH43H
+0  288.0  1072.0  487.0  575.0  334.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43D', 'CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43D        CH43E  CH43F  CH43G  CH43H
+0  288.0  1071.811146  487.0  575.0  334.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 2 #################
+############################# Initial Composition ####################################
+   CH43D  CH43E  CH43F  CH43G  CH43H
+0  414.0  791.0  112.0  317.0  327.0
+L2 Error %: 0.1
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43D  CH43E  CH43F  CH43G  CH43H
+0  414.0  791.0  112.0  317.0  327.0
+L2 Error %: 0.1
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.11
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.11
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.11
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43D       CH43E  CH43G  CH43H
+0  417.0  866.949064  321.0  356.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 3 #################
+############################# Initial Composition ####################################
+   CH43C  CH43D  CH43H
+0   17.0  450.0  418.0
+L2 Error %: 0.18
+Cosine Similarity: 0.98
+############################## Composition After Initial Remove ###############################
+   CH43C  CH43D  CH43H
+0   17.0  450.0  418.0
+L2 Error %: 0.18
+Cosine Similarity: 0.98
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43H']
+L2 Error % 0.18
+Cosine Similarity 0.98
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43H']
+L2 Error % 0.18
+Cosine Similarity 0.98
+
+#################### Final Composition #################################
+['CH43D', 'CH43H']
+L2 Error % 0.18
+Cosine Similarity 0.98
+####################################### Composition After Add-Remove #######################################
+        CH43D  CH43H
+0  456.883776  428.0
+L2 Error %: 0.18
+Cosine Similarity: 0.98
+
+
+
+
+
+                    ################ Sample 4 #################
+############################# Initial Composition ####################################
+   CH43A  CH43B  CH43C  CH43D  CH43G  CH43H
+0   76.0  216.0  302.0  400.0    5.0  360.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43B  CH43C  CH43D  CH43G  CH43H
+0   76.0  216.0  302.0  400.0    5.0  360.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43D', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43D', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43C', 'CH43D', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43B  CH43C       CH43D  CH43H
+0  258.0  332.0  412.826828  356.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 5 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  400.0  216.0   78.0  260.0  268.0   61.0  322.0
+L2 Error %: 0.15
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  400.0  216.0   78.0  260.0  268.0   61.0  322.0
+L2 Error %: 0.15
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.16
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.16
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43B', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.16
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+        CH43B  CH43E  CH43F  CH43H
+0  580.881423  436.0  266.0  322.0
+L2 Error %: 0.16
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 6 #################
+############################# Initial Composition ####################################
+   CH43B   CH43C  CH43E  CH43F  CH43G  CH43H
+0  537.0  1103.0  722.0  542.0  178.0  151.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B   CH43C  CH43E  CH43F  CH43G  CH43H
+0  537.0  1103.0  722.0  542.0  178.0  151.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43E', 'CH43F']
+L2 Error % 0.1
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43E', 'CH43F']
+L2 Error % 0.1
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43B', 'CH43C', 'CH43E', 'CH43F']
+L2 Error % 0.1
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43B        CH43C  CH43E  CH43F
+0  755.0  1023.659371  870.0  584.0
+L2 Error %: 0.1
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 7 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  217.0   66.0  173.0  465.0  192.0   20.0  369.0
+L2 Error %: 0.1
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  217.0   66.0  173.0  465.0  192.0   20.0  369.0
+L2 Error %: 0.1
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.11
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.11
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43B', 'CH43D', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.11
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43B  CH43D       CH43E  CH43F  CH43H
+0  273.0  165.0  506.775119  189.0  368.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 8 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43D   CH43E  CH43F  CH43G  CH43H
+0  150.0   81.0  158.0  1154.0   98.0  189.0  337.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43D   CH43E  CH43F  CH43G  CH43H
+0  150.0   81.0  158.0  1154.0   98.0  189.0  337.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43B  CH43D        CH43E  CH43G  CH43H
+0  241.0  151.0  1272.804054  148.0  354.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 9 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C   CH43D   CH43E  CH43F  CH43G  CH43H
+0   72.0  247.0  1044.0  1029.0  243.0  238.0  226.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C   CH43D   CH43E  CH43F  CH43G  CH43H
+0   72.0  247.0  1044.0  1029.0  243.0  238.0  226.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.09
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.09
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.09
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43C        CH43D  CH43E  CH43F  CH43G  CH43H
+0  297.0  1052.888965  990.0  250.0  275.0  234.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 10 #################
+############################# Initial Composition ####################################
+   CH43D   CH43E  CH43F  CH43G  CH43H
+0   68.0  1239.0  327.0  599.0  405.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43D   CH43E  CH43F  CH43G  CH43H
+0   68.0  1239.0  327.0  599.0  405.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+         CH43E  CH43F  CH43G  CH43H
+0  1299.962635  336.0  597.0  405.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 11 #################
+############################# Initial Composition ####################################
+    CH43A   CH43B   CH43C  CH43D  CH43E  CH43F  CH43G
+0  1304.0  1175.0  1040.0  152.0   90.0  271.0  385.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43A   CH43B   CH43C  CH43D  CH43E  CH43F  CH43G
+0  1304.0  1175.0  1040.0  152.0   90.0  271.0  385.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43A', 'CH43B', 'CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43A   CH43B   CH43C  CH43F  CH43G
+0  1591.111455  1037.0  1012.0  363.0  414.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 12 #################
+############################# Initial Composition ####################################
+    CH43A   CH43B  CH43C   CH43D  CH43E  CH43F  CH43G  CH43H
+0  1212.0  1017.0   73.0  1035.0  162.0  134.0  189.0  226.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+    CH43A   CH43B  CH43C   CH43D  CH43E  CH43F  CH43G  CH43H
+0  1212.0  1017.0   73.0  1035.0  162.0  134.0  189.0  226.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+                    ################ Sample 13 #################
+############################# Initial Composition ####################################
+    CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0  2020.0  364.0  466.0   83.0  419.0  141.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0  2020.0  364.0  466.0   83.0  419.0  141.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.06
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43B  CH43D  CH43E  CH43G  CH43H
+0  2030.872108  366.0  525.0  412.0  159.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 14 #################
+############################# Initial Composition ####################################
+    CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0  1501.0  474.0  454.0  183.0  385.0  194.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0  1501.0  474.0  454.0  183.0  385.0  194.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43B  CH43D  CH43E  CH43G  CH43H
+0  1526.908325  478.0  585.0  369.0  232.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 15 #################
+############################# Initial Composition ####################################
+    CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0  2013.0  347.0  346.0   89.0  220.0  121.0
+L2 Error %: 0.03
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0  2013.0  347.0  346.0   89.0  220.0  121.0
+L2 Error %: 0.03
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.04
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.04
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.04
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43B  CH43D  CH43E  CH43G  CH43H
+0  2024.920383  349.0  410.0  213.0  139.0
+L2 Error %: 0.04
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 16 #################
+############################# Initial Composition ####################################
+    CH43A  CH43B  CH43C   CH43D  CH43E  CH43F   CH43G
+0  3127.0  620.0  346.0  1774.0   77.0  141.0  1118.0
+L2 Error %: 0.04
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43A  CH43B  CH43C   CH43D  CH43E  CH43F   CH43G
+0  3127.0  620.0  346.0  1774.0   77.0  141.0  1118.0
+L2 Error %: 0.04
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43D', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43D', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43A', 'CH43B', 'CH43D', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43A  CH43B   CH43D   CH43G
+0  3646.839297  660.0  1811.0  1085.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 17 #################
+############################# Initial Composition ####################################
+    CH43A  CH43B  CH43C   CH43D  CH43F   CH43G
+0  2557.0  846.0  538.0  1559.0  262.0  1007.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43A  CH43B  CH43C   CH43D  CH43F   CH43G
+0  2557.0  846.0  538.0  1559.0  262.0  1007.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43C', 'CH43D', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43C', 'CH43D', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43A', 'CH43B', 'CH43C', 'CH43D', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43A  CH43B  CH43C   CH43D   CH43G
+0  2530.848232  832.0  686.0  1635.0  1085.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 18 #################
+############################# Initial Composition ####################################
+    CH43A  CH43B  CH43C   CH43D  CH43F  CH43G  CH43H
+0  1892.0  814.0  230.0  1675.0  429.0  193.0   41.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43A  CH43B  CH43C   CH43D  CH43F  CH43G  CH43H
+0  1892.0  814.0  230.0  1675.0  429.0  193.0   41.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43D', 'CH43F']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43D', 'CH43F']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43A', 'CH43B', 'CH43D', 'CH43F']
+L2 Error % 0.06
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43A  CH43B   CH43D  CH43F
+0  2158.876693  945.0  1666.0  504.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 19 #################
+############################# Initial Composition ####################################
+    CH43A  CH43B  CH43C   CH43D  CH43F  CH43G
+0  2832.0  855.0  448.0  1441.0  358.0  565.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43A  CH43B  CH43C   CH43D  CH43F  CH43G
+0  2832.0  855.0  448.0  1441.0  358.0  565.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43D', 'CH43F', 'CH43G']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43D', 'CH43F', 'CH43G']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43A', 'CH43B', 'CH43D', 'CH43F', 'CH43G']
+L2 Error % 0.06
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+        CH43A  CH43B   CH43D  CH43F  CH43G
+0  3260.88335  955.0  1401.0  433.0  449.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 20 #################
+############################# Initial Composition ####################################
+   CH43B  CH43F  CH43G  CH43H
+0   33.0  208.0   10.0  428.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43F  CH43G  CH43H
+0   33.0  208.0   10.0  428.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43F', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43F', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43F', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43F       CH43H
+0  233.0  445.851515
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 21 #################
+############################# Initial Composition ####################################
+   CH43F  CH43H
+0  279.0  422.0
+L2 Error %: 0.14
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43F  CH43H
+0  279.0  422.0
+L2 Error %: 0.14
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43F', 'CH43H']
+L2 Error % 0.14
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43F', 'CH43H']
+L2 Error % 0.14
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43F', 'CH43H']
+L2 Error % 0.14
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43F       CH43H
+0  279.0  421.810609
+L2 Error %: 0.14
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 22 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   53.0  258.0   29.0  179.0  440.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   53.0  258.0   29.0  179.0  440.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43G       CH43H
+0  298.0  206.0  455.060477
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 23 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   42.0   64.0  282.0   43.0  450.0
+L2 Error %: 0.1
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   42.0   64.0  282.0   43.0  450.0
+L2 Error %: 0.1
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.1
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.1
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43C', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.1
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43F  CH43G       CH43H
+0   88.0  279.0   59.0  454.704634
+L2 Error %: 0.1
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 24 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   16.0  299.0   14.0  145.0  444.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   16.0  299.0   14.0  145.0  444.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.06
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43G       CH43H
+0  313.0  155.0  449.905119
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 25 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0   44.0  286.0   11.0   39.0    9.0  124.0  451.0
+L2 Error %: 0.04
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0   44.0  286.0   11.0   39.0    9.0  124.0  451.0
+L2 Error %: 0.04
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.05
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43G       CH43H
+0  333.0  161.0  470.004171
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 26 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   45.0  253.0   30.0  139.0  440.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   45.0  253.0   30.0  139.0  440.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43G       CH43H
+0  289.0  164.0  454.049358
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 27 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   85.0  286.0    7.0  123.0  416.0
+L2 Error %: 0.1
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43F  CH43G  CH43H
+0   85.0  286.0    7.0  123.0  416.0
+L2 Error %: 0.1
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.1
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.1
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.1
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43G       CH43H
+0  336.0  155.0  426.048835
+L2 Error %: 0.1
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 28 #################
+############################# Initial Composition ####################################
+   CH43A  CH43C  CH43E  CH43F  CH43G  CH43H
+0   37.0  163.0  170.0    7.0  256.0  486.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43C  CH43E  CH43F  CH43G  CH43H
+0   37.0  163.0  170.0    7.0  256.0  486.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43C', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43E  CH43G     CH43H
+0  184.0  181.0  266.0  487.8987
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 29 #################
+############################# Initial Composition ####################################
+   CH43C  CH43D  CH43E  CH43G  CH43H
+0  190.0  539.0  141.0  133.0  387.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43C  CH43D  CH43E  CH43G  CH43H
+0  190.0  539.0  141.0  133.0  387.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43G', 'CH43H']
+L2 Error % 0.14
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43G', 'CH43H']
+L2 Error % 0.14
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43C', 'CH43D', 'CH43G', 'CH43H']
+L2 Error % 0.14
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43C       CH43D  CH43G  CH43H
+0  235.0  579.994159  176.0  399.0
+L2 Error %: 0.14
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 30 #################
+############################# Initial Composition ####################################
+   CH43B   CH43C  CH43D   CH43F  CH43G
+0  122.0  3355.0  135.0  1913.0  473.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B   CH43C  CH43D   CH43F  CH43G
+0  122.0  3355.0  135.0  1913.0  473.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43C   CH43F  CH43G
+0  3468.693883  1984.0  545.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 31 #################
+############################# Initial Composition ####################################
+   CH43A   CH43C  CH43D  CH43E   CH43F  CH43G
+0   83.0  1666.0  305.0  540.0  3444.0  286.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A   CH43C  CH43D  CH43E   CH43F  CH43G
+0   83.0  1666.0  305.0  540.0  3444.0  286.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+    CH43C  CH43D  CH43E       CH43F  CH43G
+0  1714.0  311.0  551.0  3440.68708  307.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 32 #################
+############################# Initial Composition ####################################
+   CH43B   CH43C   CH43F
+0  332.0  2116.0  2818.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B   CH43C   CH43F
+0  332.0  2116.0  2818.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43F']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43F']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43F']
+L2 Error % 0.06
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+    CH43C      CH43F
+0  2390.0  2875.6615
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 33 #################
+############################# Initial Composition ####################################
+    CH43A  CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  1439.0  665.0  176.0  955.0  183.0  386.0   27.0  154.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43A  CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  1439.0  665.0  176.0  955.0  183.0  386.0   27.0  154.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+                    ################ Sample 34 #################
+############################# Initial Composition ####################################
+   CH43A  CH43B   CH43D  CH43E  CH43F  CH43H
+0  484.0  154.0  1001.0   25.0  599.0  267.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43B   CH43D  CH43E  CH43F  CH43H
+0  484.0  154.0  1001.0   25.0  599.0  267.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43D', 'CH43F', 'CH43H']
+L2 Error % 0.09
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43D', 'CH43F', 'CH43H']
+L2 Error % 0.09
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43A', 'CH43D', 'CH43F', 'CH43H']
+L2 Error % 0.09
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43A     CH43D  CH43F  CH43H
+0  651.0  987.9188  604.0  287.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 35 #################
+############################# Initial Composition ####################################
+   CH43A  CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0  762.0  237.0  949.0  163.0  848.0   16.0  175.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0  762.0  237.0  949.0  163.0  848.0   16.0  175.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43D', 'CH43F', 'CH43H']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43D', 'CH43F', 'CH43H']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43A', 'CH43D', 'CH43F', 'CH43H']
+L2 Error % 0.06
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+        CH43A  CH43D  CH43F  CH43H
+0  1090.88287  952.0  903.0  204.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 36 #################
+############################# Initial Composition ####################################
+   CH43B  CH43D  CH43F   CH43G  CH43H
+0  319.0  272.0   32.0  1362.0  253.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43D  CH43F   CH43G  CH43H
+0  319.0  272.0   32.0  1362.0  253.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43G', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43G', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43B', 'CH43D', 'CH43G', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43B  CH43D        CH43G  CH43H
+0  324.0  281.0  1369.082215  264.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 37 #################
+############################# Initial Composition ####################################
+   CH43B  CH43D   CH43G  CH43H
+0  153.0  398.0  1211.0  270.0
+L2 Error %: 0.14
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43D   CH43G  CH43H
+0  153.0  398.0  1211.0  270.0
+L2 Error %: 0.14
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43G', 'CH43H']
+L2 Error % 0.14
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43G', 'CH43H']
+L2 Error % 0.14
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43D', 'CH43G', 'CH43H']
+L2 Error % 0.14
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43D        CH43G  CH43H
+0  405.0  1309.042576  318.0
+L2 Error %: 0.14
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 38 #################
+############################# Initial Composition ####################################
+   CH43B   CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  121.0  2716.0  281.0  114.0  588.0  996.0  276.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B   CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  121.0  2716.0  281.0  114.0  588.0  996.0  276.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43D', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+        CH43C  CH43D  CH43F   CH43G  CH43H
+0  2815.68978  303.0  615.0  1070.0  288.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 39 #################
+############################# Initial Composition ####################################
+   CH43B   CH43C  CH43D   CH43F  CH43G  CH43H
+0  443.0  1917.0  116.0  1399.0  340.0  179.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B   CH43C  CH43D   CH43F  CH43G  CH43H
+0  443.0  1917.0  116.0  1399.0  340.0  179.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43B        CH43C   CH43F  CH43G
+0  508.0  1991.676665  1558.0  336.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 40 #################
+############################# Initial Composition ####################################
+    CH43A   CH43B   CH43E   CH43G
+0  7147.0  1962.0  1192.0  3046.0
+L2 Error %: 0.15
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+    CH43A   CH43B   CH43E   CH43G
+0  7147.0  1962.0  1192.0  3046.0
+L2 Error %: 0.15
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43G']
+L2 Error % 0.16
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43G']
+L2 Error % 0.16
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43A', 'CH43G']
+L2 Error % 0.16
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+        CH43A   CH43G
+0  9748.02152  3599.0
+L2 Error %: 0.16
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 41 #################
+############################# Initial Composition ####################################
+   CH43A  CH43B  CH43C   CH43D  CH43F  CH43H
+0  702.0  468.0   58.0  2248.0  146.0  199.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43B  CH43C   CH43D  CH43F  CH43H
+0  702.0  468.0   58.0  2248.0  146.0  199.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43D', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43D', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43A', 'CH43D', 'CH43H']
+L2 Error % 0.13
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+    CH43A        CH43D  CH43H
+0  1296.0  2208.967405  316.0
+L2 Error %: 0.13
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 42 #################
+############################# Initial Composition ####################################
+    CH43A  CH43B  CH43C  CH43E  CH43F  CH43G  CH43H
+0  2624.0  862.0  604.0   34.0  224.0  368.0  185.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43A  CH43B  CH43C  CH43E  CH43F  CH43G  CH43H
+0  2624.0  862.0  604.0   34.0  224.0  368.0  185.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43A', 'CH43B', 'CH43C', 'CH43F', 'CH43G']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+        CH43A  CH43B  CH43C  CH43F  CH43G
+0  2596.92348  946.0  674.0  320.0  364.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 43 #################
+############################# Initial Composition ####################################
+    CH43A   CH43B  CH43C  CH43F  CH43G  CH43H
+0  1846.0  1255.0  896.0  197.0   50.0   46.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43A   CH43B  CH43C  CH43F  CH43G  CH43H
+0  1846.0  1255.0  896.0  197.0   50.0   46.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43C']
+L2 Error % 0.09
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43C']
+L2 Error % 0.09
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43A', 'CH43B', 'CH43C']
+L2 Error % 0.09
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43A   CH43B  CH43C
+0  2018.053149  1301.0  971.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 44 #################
+############################# Initial Composition ####################################
+   CH43A  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0   27.0  157.0  455.0  143.0   99.0   69.0  394.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0   27.0  157.0  455.0  143.0   99.0   69.0  394.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43C       CH43D  CH43E  CH43F  CH43H
+0  189.0  456.485197  204.0  102.0  393.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 45 #################
+############################# Initial Composition ####################################
+   CH43A  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0   21.0  186.0   20.0  251.0   23.0  298.0  442.0
+L2 Error %: 0.16
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0   21.0  186.0   20.0  251.0   23.0  298.0  442.0
+L2 Error %: 0.16
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.16
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.16
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43C', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.16
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43E  CH43G       CH43H
+0  198.0  290.0  304.0  449.484848
+L2 Error %: 0.16
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 46 #################
+############################# Initial Composition ####################################
+   CH43A  CH43B  CH43C  CH43E  CH43F  CH43G  CH43H
+0   30.0  126.0  448.0   59.0   74.0  264.0  395.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43B  CH43C  CH43E  CH43F  CH43G  CH43H
+0   30.0  126.0  448.0   59.0   74.0  264.0  395.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+        CH43C  CH43F  CH43G  CH43H
+0  557.575174   88.0  339.0  411.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 47 #################
+############################# Initial Composition ####################################
+   CH43A  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0   68.0  288.0   35.0   92.0   46.0  127.0  437.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0   68.0  288.0   35.0   92.0   46.0  127.0  437.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43E  CH43G       CH43H
+0  330.0  168.0  145.0  449.642048
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 48 #################
+############################# Initial Composition ####################################
+   CH43C  CH43E  CH43F  CH43G  CH43H
+0  520.0   64.0   11.0  248.0  436.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43C  CH43E  CH43F  CH43G  CH43H
+0  520.0   64.0   11.0  248.0  436.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43C', 'CH43G', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+        CH43C  CH43G  CH43H
+0  552.433606  277.0  450.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 49 #################
+############################# Initial Composition ####################################
+    CH43B  CH43D  CH43F  CH43G  CH43H
+0  1094.0  469.0  155.0   55.0  263.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+    CH43B  CH43D  CH43F  CH43G  CH43H
+0  1094.0  469.0  155.0   55.0  263.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43F', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43F', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43D', 'CH43F', 'CH43H']
+L2 Error % 0.08
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43B  CH43D  CH43F  CH43H
+0  1136.992953  476.0  168.0  255.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 50 #################
+############################# Initial Composition ####################################
+   CH43A   CH43B  CH43F  CH43G
+0  306.0  3715.0   42.0  244.0
+L2 Error %: 0.04
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A   CH43B  CH43F  CH43G
+0  306.0  3715.0   42.0  244.0
+L2 Error %: 0.04
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43G']
+L2 Error % 0.05
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43B  CH43G
+0  3994.868665  312.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 51 #################
+############################# Initial Composition ####################################
+   CH43A   CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0    4.0  2708.0  362.0   70.0   93.0   65.0   40.0
+L2 Error %: 0.02
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A   CH43B  CH43D  CH43E  CH43F  CH43G  CH43H
+0    4.0  2708.0  362.0   70.0   93.0   65.0   40.0
+L2 Error %: 0.02
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43F']
+L2 Error % 0.03
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43F']
+L2 Error % 0.03
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43D', 'CH43F']
+L2 Error % 0.03
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+         CH43B  CH43D  CH43F
+0  2797.873198  389.0  155.0
+L2 Error %: 0.03
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 52 #################
+############################# Initial Composition ####################################
+   CH43D  CH43E  CH43F  CH43G  CH43H
+0  511.0  855.0  214.0  115.0  256.0
+L2 Error %: 0.17
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43D  CH43E  CH43F  CH43G  CH43H
+0  511.0  855.0  214.0  115.0  256.0
+L2 Error %: 0.17
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.17
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43D', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.17
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43D', 'CH43E', 'CH43F', 'CH43H']
+L2 Error % 0.17
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43D       CH43E  CH43F  CH43H
+0  507.0  961.340953  224.0  259.0
+L2 Error %: 0.17
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 53 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43D   CH43E  CH43G  CH43H
+0  188.0  137.0  245.0  1514.0  470.0  191.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43D   CH43E  CH43G  CH43H
+0  188.0  137.0  245.0  1514.0  470.0  191.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43B', 'CH43D', 'CH43E', 'CH43G', 'CH43H']
+L2 Error % 0.12
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+   CH43B  CH43D        CH43E  CH43G  CH43H
+0  312.0  229.0  1603.276712  414.0  187.0
+L2 Error %: 0.12
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 54 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  102.0  624.0  323.0  929.0  475.0  350.0  186.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43D  CH43E  CH43F  CH43G  CH43H
+0  102.0  624.0  323.0  929.0  475.0  350.0  186.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.09
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.09
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43D', 'CH43E', 'CH43F', 'CH43G', 'CH43H']
+L2 Error % 0.09
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43C  CH43D       CH43E  CH43F  CH43G  CH43H
+0  696.0  333.0  873.868135  486.0  403.0  197.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 55 #################
+############################# Initial Composition ####################################
+   CH43A   CH43C   CH43D   CH43E
+0  207.0  1664.0  2051.0  2121.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A   CH43C   CH43D   CH43E
+0  207.0  1664.0  2051.0  2121.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43D', 'CH43E']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+    CH43C   CH43D        CH43E
+0  1791.0  2069.0  2182.795099
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 56 #################
+############################# Initial Composition ####################################
+   CH43A   CH43C   CH43D   CH43E
+0  131.0  1357.0  2036.0  1928.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A   CH43C   CH43D   CH43E
+0  131.0  1357.0  2036.0  1928.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43C', 'CH43D', 'CH43E']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43C', 'CH43D', 'CH43E']
+L2 Error % 0.06
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+    CH43C        CH43D   CH43E
+0  1437.0  2047.735982  1967.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 57 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43D   CH43E  CH43F  CH43G  CH43H
+0  472.0  416.0  250.0  1871.0  272.0  199.0  128.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43D   CH43E  CH43F  CH43G  CH43H
+0  472.0  416.0  250.0  1871.0  272.0  199.0  128.0
+L2 Error %: 0.05
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43D', 'CH43E', 'CH43F']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43D', 'CH43E', 'CH43F']
+L2 Error % 0.07
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43C', 'CH43D', 'CH43E', 'CH43F']
+L2 Error % 0.07
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43B  CH43C  CH43D        CH43E  CH43F
+0  711.0  305.0  225.0  2066.848254  300.0
+L2 Error %: 0.07
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 58 #################
+############################# Initial Composition ####################################
+   CH43A  CH43B  CH43C  CH43D   CH43E  CH43F  CH43G  CH43H
+0  183.0  147.0  257.0  343.0  1942.0  109.0  259.0  259.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43B  CH43C  CH43D   CH43E  CH43F  CH43G  CH43H
+0  183.0  147.0  257.0  343.0  1942.0  109.0  259.0  259.0
+L2 Error %: 0.08
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+                    ################ Sample 59 #################
+############################# Initial Composition ####################################
+   CH43B  CH43C  CH43D   CH43E  CH43F  CH43G  CH43H
+0  267.0  352.0  332.0  1718.0  402.0  178.0  144.0
+L2 Error %: 0.04
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43B  CH43C  CH43D   CH43E  CH43F  CH43G  CH43H
+0  267.0  352.0  332.0  1718.0  402.0  178.0  144.0
+L2 Error %: 0.04
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43D', 'CH43E', 'CH43F']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43B', 'CH43C', 'CH43D', 'CH43E', 'CH43F']
+L2 Error % 0.06
+Cosine Similarity 1.0
+
+#################### Final Composition #################################
+['CH43B', 'CH43C', 'CH43D', 'CH43E', 'CH43F']
+L2 Error % 0.06
+Cosine Similarity 1.0
+####################################### Composition After Add-Remove #######################################
+   CH43B  CH43C  CH43D        CH43E  CH43F
+0  486.0  258.0  311.0  1896.777326  441.0
+L2 Error %: 0.06
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 60 #################
+############################# Initial Composition ####################################
+   CH43A  CH43B  CH43C  CH43E  CH43G  CH43H
+0  329.0  223.0   57.0   75.0   86.0  387.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43B  CH43C  CH43E  CH43G  CH43H
+0  329.0  223.0   57.0   75.0   86.0  387.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43G', 'CH43H']
+L2 Error % 0.11
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43G', 'CH43H']
+L2 Error % 0.11
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43A', 'CH43B', 'CH43G', 'CH43H']
+L2 Error % 0.11
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+        CH43A  CH43B  CH43G  CH43H
+0  485.759308  162.0   99.0  410.0
+L2 Error %: 0.11
+Cosine Similarity: 0.99
+
+
+
+
+
+                    ################ Sample 61 #################
+############################# Initial Composition ####################################
+   CH43A  CH43B  CH43C  CH43E  CH43F  CH43G  CH43H
+0  269.0  262.0   90.0   80.0    1.0   72.0  382.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+############################## Composition After Initial Remove ###############################
+   CH43A  CH43B  CH43C  CH43E  CH43F  CH43G  CH43H
+0  269.0  262.0   90.0   80.0    1.0   72.0  382.0
+L2 Error %: 0.09
+Cosine Similarity: 1.0
+
+############################## Performing Add-Remove Step ##############################
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 0 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43G', 'CH43H']
+L2 Error % 0.1
+Cosine Similarity 0.99
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!! LAYER: 1 !!!!!!!!!!!!!!!!!!!!!!!!!
+Best Signature Composition ['CH43A', 'CH43B', 'CH43G', 'CH43H']
+L2 Error % 0.1
+Cosine Similarity 0.99
+
+#################### Final Composition #################################
+['CH43A', 'CH43B', 'CH43G', 'CH43H']
+L2 Error % 0.1
+Cosine Similarity 0.99
+####################################### Composition After Add-Remove #######################################
+        CH43A  CH43B  CH43G  CH43H
+0  464.764766  201.0   80.0  410.0
+L2 Error %: 0.1
+Cosine Similarity: 0.99

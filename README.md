@@ -63,7 +63,7 @@ With our example data:
 ```
 python signatures/run_sigProfilerExtractor.py '/results/denovo_extraction_df.tsv' '/results/denovo_extraction'
 ```
-Results from this run can be found in the folder `results/denovo_extraction/`.
+Results from this run can be found in the folder `results/denovo_extraction/`. For demonstration purposes, the number of extracted signatures was limited from 1 to 10. 
 
 #### Extra preliminary analysis
 Some exploratory analysis of signature activities can be performed by running the script `signatures/signatures_activities_exploration.R`. Input required: 

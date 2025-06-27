@@ -28,7 +28,7 @@ INPUT DATA
 	exome: False
 NMF REPLICATES
 	minimum_signatures: 1
-	maximum_signatures: 25
+	maximum_signatures: 10
 	NMF_replicates: 100
 NMF ENGINE
 	NMF_init: random
@@ -60,49 +60,47 @@ COSMIC MATCH
 	collapse_to_SBS96: True
 
 -------Analysis Progress------- 
-[2025-06-26 15:01:27] Analysis started: 
+[2025-06-27 08:15:43] Analysis started: 
 
 ##################################
 
-[2025-06-26 15:01:27] Analysis started for CH43. Matrix size [43 rows x 61 columns]
+[2025-06-27 08:15:43] Analysis started for CH43. Matrix size [43 rows x 61 columns]
 
-[2025-06-26 15:01:27] Normalization GMM with cutoff value set at 7528
+[2025-06-27 08:15:43] Normalization GMM with cutoff value set at 7528
 
-[2025-06-26 15:02:56] CH43 de novo extraction completed for a total of 1 signatures! 
-Execution time:0:01:28
+[2025-06-27 08:17:13] CH43 de novo extraction completed for a total of 1 signatures! 
+Execution time:0:01:30
 
-[2025-06-26 15:04:46] CH43 de novo extraction completed for a total of 2 signatures! 
-Execution time:0:01:49
+[2025-06-27 08:19:08] CH43 de novo extraction completed for a total of 2 signatures! 
+Execution time:0:01:54
 
-[2025-06-26 15:07:29] CH43 de novo extraction completed for a total of 3 signatures! 
-Execution time:0:02:43
+[2025-06-27 08:22:27] CH43 de novo extraction completed for a total of 3 signatures! 
+Execution time:0:03:18
 
-[2025-06-26 15:11:39] CH43 de novo extraction completed for a total of 4 signatures! 
-Execution time:0:04:10
+[2025-06-27 08:26:45] CH43 de novo extraction completed for a total of 4 signatures! 
+Execution time:0:04:18
 
-[2025-06-26 15:17:59] CH43 de novo extraction completed for a total of 5 signatures! 
-Execution time:0:06:19
+[2025-06-27 08:33:09] CH43 de novo extraction completed for a total of 5 signatures! 
+Execution time:0:06:24
 
-[2025-06-26 15:26:19] CH43 de novo extraction completed for a total of 6 signatures! 
-Execution time:0:08:19
+[2025-06-27 08:42:25] CH43 de novo extraction completed for a total of 6 signatures! 
+Execution time:0:09:16
 
-[2025-06-26 15:38:28] CH43 de novo extraction completed for a total of 7 signatures! 
-Execution time:0:12:09
+[2025-06-27 08:54:55] CH43 de novo extraction completed for a total of 7 signatures! 
+Execution time:0:12:29
 
-[2025-06-26 15:53:46] CH43 de novo extraction completed for a total of 8 signatures! 
-Execution time:0:15:17
+[2025-06-27 09:12:18] CH43 de novo extraction completed for a total of 8 signatures! 
+Execution time:0:17:22
 
-[2025-06-26 16:14:49] CH43 de novo extraction completed for a total of 9 signatures! 
-Execution time:0:21:02
+[2025-06-27 09:31:08] CH43 de novo extraction completed for a total of 9 signatures! 
+Execution time:0:18:50
 
-[2025-06-26 16:38:19] CH43 de novo extraction completed for a total of 10 signatures! 
-Execution time:0:23:29
+[2025-06-27 09:57:36] CH43 de novo extraction completed for a total of 10 signatures! 
+Execution time:0:26:28
 
-[2025-06-26 17:08:53] CH43 de novo extraction completed for a total of 11 signatures! 
-Execution time:0:30:34
+[2025-06-27 09:57:43] Analysis ended: 
 
-[2025-06-26 17:42:03] CH43 de novo extraction completed for a total of 12 signatures! 
-Execution time:0:33:10
-
-[2025-06-26 18:26:58] CH43 de novo extraction completed for a total of 13 signatures! 
-Execution time:0:44:54
+-------Job Status------- 
+Analysis of mutational signatures completed successfully! 
+Total execution time: 1:41:59 
+Results can be found in:  /results/denovo_extraction  folder
