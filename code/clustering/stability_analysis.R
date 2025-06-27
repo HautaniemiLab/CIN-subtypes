@@ -3,14 +3,13 @@ suppressMessages({
   library(ggplot2)
 })
 
-setwd("path/CIN-subtypes")
-output_path <- "path/to/output_folder"
+output_path <- "/results/stability"
 
 ## Analysis of patient stability: are all samples from the same patient?
 
 # Load data: cluster data frame from cluster_analysis_and_selection.R and sample_data.tsv
-sample_data <- read.table(file.path("path/to/sample_data.tsv"), sep="\t", header=T)
-clusters <- read.table(file.path("path/to/clusters.tsv"), sep="\t", header=T)
+sample_data <- read.table("/data/example/sample_data.tsv", sep="\t", header=T)
+clusters <- read.table(file.path("/results/clusters.tsv"), sep="\t", header=T)
 
 # Prepare the data-frame for the analysis:
 # - join folders

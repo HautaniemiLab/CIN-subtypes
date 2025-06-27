@@ -1,14 +1,13 @@
-library(StructuralVariantAnnotation)
-library(tidyverse)
-library(ShatterSeek)
-
-# Set working directory to this repo
-setwd("path/to/CIN-subtypes")
+suppressMessages({
+  library(StructuralVariantAnnotation)
+  library(tidyverse)
+  library(ShatterSeek)
+}) 
 
 # Load functions
-source(file.path("code", "FeatureR", "CNVfeatures_functions.R"))
-source(file.path("code", "FeatureR", "SVfeatures_functions.R"))
-source(file.path("code", "FeatureR", "utils.R"))
+source(file.path("FeatureR", "CNVfeatures_functions.R"))
+source(file.path("FeatureR", "SVfeatures_functions.R"))
+source(file.path("FeatureR", "utils.R"))
 
 ##### Extraction of features based on pre-existing models #####
 ## Input data 
@@ -16,23 +15,26 @@ source(file.path("code", "FeatureR", "utils.R"))
 #'  - sample: sample name
 #'  - patient: patient name
 #'  - path: path to the directory containing PURPLE and LINX results relative to the specified sample
-sample_data <- read.table("path/to/sample_data.tsv", sep="\t", header=T)
+sample_data <- read.table("/data/example/sample_data.tsv", sep="\t", header=T) |>
+  mutate(path = paste0("/", path))
 
 ## Load models
-models <- readRDS(file.path("data", "discretization_models.rds"))
+models <- readRDS("/data/discretization_models.rds")
 
 ## Define output path 
-output_path <- "output/path"
+output_path <- "/results"
 
 #### Create segmentation file ####
 # Optional: modify the parameter purityCut in extract_segments, default = 0.2
 segments <- extract_segments(sample_data, verbose =T)
 write.table(segments, file.path(output_path, "segmentation.tsv"), sep="\t", col.names = T, row.names = F)
+print("Segmentation written")
 
 # If samples have been filtered out by purityCut, remove them from sample_data
 sample_data <- sample_data %>% filter(sample %in% unique(segments$sample))
 
 #### Extract SV features #### 
+print("############## Starting SV features extraction ##############")
 ## Complex and single SVs
 cosim_feat <- cosim(sample_data)
 
@@ -58,6 +60,7 @@ magnitudes_feat <- logR_quantiles(sample_data, segments)
 chrmtrps_feat <- is.chromotripsis(sample_data, segments)
 
 #### Extract CNV features ####
+print("############## Starting CNV features extraction ##############")
 ss <- segments %>%
   mutate(length = end - start) %>%
   filter(length>0) %>%
@@ -82,7 +85,7 @@ features <- Reduce(function(df1, df2) merge(df1, df2, by = "sample", all = TRUE)
                    list(cosim_feat, trater_feat, compact_sparse_feat, dels_feat, dups_feat, sv_types,
                         magnitudes_feat, chrmtrps_feat, ss_feat, bp5MB_feat, oscil_feat,
                         bpArm_feat, changep_feat))
-write.table(features, file.path(output_path, "features.tsv"), sep='\t', col.names = TRUE)
+write.table(features, file.path(output_path, "features.tsv"), sep='\t', col.names = TRUE, row.names = FALSE)
 
 #### Once created the feature data frame, it can be used for signature extraction (de novo signatures) or for signature 
 #### attribution (calculating activities from existing signatures). In any case, the extracted features the feature data
@@ -93,4 +96,6 @@ ex_mat <- t(as.matrix(features[, -1]))
 colnames(ex_mat) <- features$sample
 ex_mat[is.na(ex_mat)] <- 0
 
-write.table(ex_mat, file.path(output_path, "extraction_df.tsv"), sep="\t", col.names = T, row.names =F)
+write.table(ex_mat, file.path(output_path, "extraction_df.tsv"), sep="\t", col.names = T, row.names =T)
+
+print("features.tsv and extraction_df.tsv have been correctly saved in the results folder")

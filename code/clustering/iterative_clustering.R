@@ -44,10 +44,10 @@ input_mat <- t(data_matrix)
 
 # Define different reproducible seeds for each run
 set.seed(17171)
-rand_seeds <- sample(10000:99999, 20)
+rand_seeds <- sample(10000:99999, 50)
 
 # Run ConsensusClusterPlus
-for(i in 1:20)
+for(i in 1:50)
 {
   r <- ConsensusClusterPlus(input_mat, maxK = 10, 
                             reps=1000, 

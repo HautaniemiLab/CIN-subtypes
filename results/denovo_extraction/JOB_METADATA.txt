@@ -1,0 +1,108 @@
+THIS FILE CONTAINS THE METADATA ABOUT SYSTEM AND RUNTIME
+
+
+-------System Info-------
+Operating System Name: Linux
+Nodename: 41235ffce015
+Release: 6.8.0-60-generic
+Version: #63~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 22 19:00:15 UTC 2
+
+-------Python and Package Versions------- 
+Python Version: 3.12.4
+SigProfilerExtractor Version: 1.1.21
+SigProfilerPlotting Version: 1.3.14
+SigProfilerMatrixGenerator Version: 1.2.17
+SigProfilerAssignment Version: 0.0.30
+Pandas version: 1.5.3
+Numpy version: 1.26.4
+Scipy version: 1.13.0
+Scikit-learn version: 1.5.1
+
+--------------EXECUTION PARAMETERS--------------
+INPUT DATA
+	input_type: matrix
+	output: /results/denovo_extraction
+	input_data: /results/denovo_extraction_df.tsv
+	reference_genome: GRCh37
+	context_types: SBS43
+	exome: False
+NMF REPLICATES
+	minimum_signatures: 1
+	maximum_signatures: 25
+	NMF_replicates: 100
+NMF ENGINE
+	NMF_init: random
+	precision: single
+	matrix_normalization: gmm
+	resample: True
+	seeds: random
+	min_NMF_iterations: 10,000
+	max_NMF_iterations: 1,000,000
+	NMF_test_conv: 10,000
+	NMF_tolerance: 1e-15
+CLUSTERING
+	clustering_distance: cosine
+EXECUTION
+	cpu: 12; Maximum number of CPU is 12
+	gpu: False
+Solution Estimation
+	stability: 0.8
+	min_stability: 0.2
+	combined_stability: 1.0
+	allow_stability_drop: False
+COSMIC MATCH
+	opportunity_genome: GRCh38
+	cosmic_version: 3.3
+	nnls_add_penalty: 0.05
+	nnls_remove_penalty: 0.01
+	initial_remove_penalty: 0.05
+	export_probabilities: True
+	collapse_to_SBS96: True
+
+-------Analysis Progress------- 
+[2025-06-26 15:01:27] Analysis started: 
+
+##################################
+
+[2025-06-26 15:01:27] Analysis started for CH43. Matrix size [43 rows x 61 columns]
+
+[2025-06-26 15:01:27] Normalization GMM with cutoff value set at 7528
+
+[2025-06-26 15:02:56] CH43 de novo extraction completed for a total of 1 signatures! 
+Execution time:0:01:28
+
+[2025-06-26 15:04:46] CH43 de novo extraction completed for a total of 2 signatures! 
+Execution time:0:01:49
+
+[2025-06-26 15:07:29] CH43 de novo extraction completed for a total of 3 signatures! 
+Execution time:0:02:43
+
+[2025-06-26 15:11:39] CH43 de novo extraction completed for a total of 4 signatures! 
+Execution time:0:04:10
+
+[2025-06-26 15:17:59] CH43 de novo extraction completed for a total of 5 signatures! 
+Execution time:0:06:19
+
+[2025-06-26 15:26:19] CH43 de novo extraction completed for a total of 6 signatures! 
+Execution time:0:08:19
+
+[2025-06-26 15:38:28] CH43 de novo extraction completed for a total of 7 signatures! 
+Execution time:0:12:09
+
+[2025-06-26 15:53:46] CH43 de novo extraction completed for a total of 8 signatures! 
+Execution time:0:15:17
+
+[2025-06-26 16:14:49] CH43 de novo extraction completed for a total of 9 signatures! 
+Execution time:0:21:02
+
+[2025-06-26 16:38:19] CH43 de novo extraction completed for a total of 10 signatures! 
+Execution time:0:23:29
+
+[2025-06-26 17:08:53] CH43 de novo extraction completed for a total of 11 signatures! 
+Execution time:0:30:34
+
+[2025-06-26 17:42:03] CH43 de novo extraction completed for a total of 12 signatures! 
+Execution time:0:33:10
+
+[2025-06-26 18:26:58] CH43 de novo extraction completed for a total of 13 signatures! 
+Execution time:0:44:54

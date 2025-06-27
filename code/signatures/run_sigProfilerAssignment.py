@@ -6,6 +6,7 @@ import sys
 #### Signature attribution usign SigProfilerAssignment
 #
 # Run as: python run_sigProfilerAssignment.py "/path/feature_matrix.tsv" "path/to/De-Novo_Signatures.txt" "output/path/"
+# Example:  python run_sigProfilerAssignment.py "/results/extraction_df.tsv" "/data/SCN_Signatures.txt" "/results/assignment"
 
 def run_sigAssignment(input_path, signatures_path, output_path):    
     Analyze.denovo_fit(

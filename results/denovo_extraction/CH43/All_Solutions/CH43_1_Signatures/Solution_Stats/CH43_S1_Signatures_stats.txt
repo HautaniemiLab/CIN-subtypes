@@ -1,0 +1,2 @@
+Signatures	Stability	Total Mutations
+CH43A	1.0	190069

@@ -1,17 +1,18 @@
 # Code to reproduce Fig1a from Micoli et al. 2025
+suppressMessages({
+  library(StructuralVariantAnnotation)
+  library(tidyverse)
+  library(flexmix)
+  library(gridExtra)
+  library(ggpubr)
+}) 
 
-library(StructuralVariantAnnotation)
-library(tidyverse)
-library(flexmix)
-library(gridExtra)
-library(ggpubr)
-
-setwd("path/to/CIN-subtypes")
+output_path <- "/results"
 
 ############ Features plot ##############
 #### Barplot
 # Load features and combine in a unique dataframe
-features <- read.table("path/to/features.tsv", sep="\t", header=T)
+features <- read.table("/results/features.tsv", sep="\t", header=T)
 
 # Normalize features for better visualization
 normalize <- function(x) {
@@ -81,20 +82,20 @@ patient_plot <- patient_plot +
   geom_text(data=positions, aes(x = xmin + (xmax - xmin) / 2, y = ymin + (ymax - ymin) / 2,
                                 label = gsub("\\\\n", "\n", text)), inherit.aes = F, size = 2.5)
 
-patient_plot
+#patient_plot
 
 #### Distributions
 # Ricalculate non-discretized features 
 # Load functions
-source(file.path("code", "FeatureR", "CNVfeatures_functions.R"))
-source(file.path("code", "FeatureR", "SVfeatures_functions.R"))
-source(file.path("code", "FeatureR", "utils.R"))
+source(file.path("FeatureR", "CNVfeatures_functions.R"))
+source(file.path("FeatureR", "SVfeatures_functions.R"))
+source(file.path("FeatureR", "utils.R"))
 
 # Use the same table used to extract features
-sample_data <- read.table("path/to/sample_data.tsv", sep="\t", header=T)
+sample_data <- read.table("/data/example/sample_data.tsv", sep="\t", header=T)
 
 # Quantify non-discretized features
-segments <- extract_segments(sample_data, verbose =T)
+segments <- read.table("/results/segmentation.tsv", sep="\t", header=T)
 
 deldups_long <- deldup(sample_data)
 ss <- segments %>%
@@ -110,7 +111,7 @@ changep_counts <- changp_extract(sample_data, segments)
 non_discretized_features <- list(deldups_long$deletions, deldups_long$duplications, ss, bp5MB_counts, oscil_counts, bpArm_counts, changep_counts)
 
 # Load models
-models <- readRDS(file.path("data", "discretization_models.rds"))
+models <- readRDS("/data/discretization_models.rds")
 names(non_discretized_features) <- names(models)[c(6,7,1:5)]
 
 # Get division lines for 5MB breaks
@@ -203,4 +204,4 @@ for(f in 1:length(non_discretized_features))
 density_plots <- grid.arrange(grobs = plot_list, ncol = 7)
 
 features_overview <- ggarrange(patient_plot, density_plots, ncol = 1, heights = c(3,1)) 
-ggsave(file.apth(output_path, "features_overview.pdf"), features_overview, width =12, height = 8, dpi = "retina")
+ggsave(file.path(output_path, "features_overview.pdf"), features_overview, width =12, height = 8, dpi = "retina")

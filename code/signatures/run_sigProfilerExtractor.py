@@ -5,7 +5,8 @@ import sys
 
 #### Signature extraction usign SigProfilerExtractor
 #
-# Run as: python run_sigProfilerExtractor.py "/path/feature_matrix.tsv" "output/path/" 
+# Run as: python run_sigProfilerExtractor.py "/path/feature_matrix.tsv" "output/path/"
+# Example:  python run_sigProfilerExtractor.py "/results/denovo_extraction_df.tsv" "/results/denovo_extraction"
 
 def run_sigProfiler(input_path, output_path): 
 

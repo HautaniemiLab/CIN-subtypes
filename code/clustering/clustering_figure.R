@@ -27,13 +27,15 @@ suppressMessages({
 # - clustering object of the selected run (rds object)
 
 # Load data
-act <- read.table(file.path("~/your/path", "signature_activities.tsv"), sep="\t", header=T)
-metadata <- read.table(file.path("~/your/path", "figure_metadata.tsv"), sep="\t", header=T)
-cl_obj <- readRDS(file.path("~/your/path", "hc_eu.n.rds"))
-output_path <- "~/your/output/path"
+act <- read.table("/results/assignment/De_Novo_Solution/Activities/De_Novo_Activities.txt", sep="\t", header=T)
+metadata <- read.table(file.path("/data/example/metadata.tsv"), sep="\t", header=T)
+cl_obj <- readRDS(file.path("/results/multiple_clustering/hc_eu.1.rds")) # This is a random clustering object, use the correct one
+output_path <- "/results"
 
 # Transform activities into proportions
 props <- act %>%
+  setNames(gsub("\\.", "-", colnames(act))) %>%
+  rename(sample = Samples) %>%
   rowwise() %>%
   mutate(across(`SCN-A`:`SCN-K`, ~ .x / sum(c_across(`SCN-A`:`SCN-K`)))) %>%
   ungroup() %>%
@@ -109,7 +111,7 @@ t <- HeatmapAnnotation(
   clusters = anno_block(gp = gpar(fill = cluster_colors)[c(5,3,1,2,6,4)],
                         labels = names(cluster_colors)[c(5,3,1,2,6,4)], 
                         labels_gp = gpar(col = "white", fontsize = 10)),
-  sigs = anno_barplot(ordered_props[, 4:14], gp = gpar(fill = signature_colors, col = NA),
+  sigs = anno_barplot(ordered_props[, 2:12], gp = gpar(fill = signature_colors, col = NA),
                       bar_width = 1, height = unit(10, "cm"), axis_param=list(at = NA, labels =NA, side = "left")),
   HR = metadata$HR,
   CDK12 = metadata$CDK12mut,
@@ -180,4 +182,3 @@ png(file.path(output_path, "clustering_heatmap.png"), height = 40, width = 35, u
 draw(ht, annotation_legend_list = packed_legends_with_spacers, heatmap_legend_side = "bottom", annotation_legend_side = "bottom", 
      merge_legend = T)
 dev.off()
-

@@ -1,15 +1,16 @@
 # Code to reproduce Fig1a from Micoli et al. 2025
 # Assumption: same features and number of signatures as in the original work
 
-library(tidyverse)
-library(gridExtra)
-library(ggpubr)
+suppressMessages({
+  library(tidyverse)
+  library(gridExtra)
+  library(ggpubr)
+})
 
-setwd("path/to/CIN-subtypes")
-output_path <- "path/to/output_dir"
+output_path <- "/results"
 
 # Load signatures definition
-sigs_definition <- read.table(file.path("data", "SCN_Signatures.txt"), sep="\t", header=T)
+sigs_definition <- read.table("/data/SCN_Signatures.txt", sep="\t", header=T)
 colnames(sigs_definition) <- gsub("\\.", "-", colnames(sigs_definition))
 
 # Color vectors

@@ -3,14 +3,12 @@ suppressMessages({
   library(ggplot2)
 })
 
-setwd("path/CIN-subtypes")
-
 # After visual inspection of statistics from consensusClusterPlus and 
 # after having decided the number of clusters (in our case 6), extract the
 # consensus attribution
 
-cluster_path <- "path/to/folder/with/clustering_runs"
-output_path <- "path/to/output/folder"
+cluster_path <- "/results/multiple_clustering" # path to clustering runs
+output_path <- "/results"
 
 ## Read all iterations and extract the grouping 
 n <- 6 #set the number of clusters after inspection of consensusClusterPlus output
@@ -52,6 +50,7 @@ cl_stats <- cl_runs |>
     disagreement = majority_pct < 1,
     tie = n() > 1
   )
+write.table(cl_stats, file.path(output_path, "clustering_statistics.tsv"), sep="\t", col.names = T)
 
 ## Selection of the run with the best clustering
 # NB: ties are handled by taking the first cluster assignment and not counted when selecting the run with the best match. 
@@ -77,4 +76,3 @@ cl_final <- cl_runs |>
   setNames(c("sample", "cluster"))
 
 write.table(cl_final, file.path(output_path, "clusters.tsv"), sep="\t", col.names = T, row.names = F)
-
