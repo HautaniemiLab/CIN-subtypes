@@ -143,3 +143,20 @@ Example of running is provided using the results from the example data. Since th
 Original figure:
 
 ![Original Heatmap](data/images/heatmap.png)
+
+#### Transcriptomics analysis
+To perform trasncriptomic characterization of the clusters it is possible to use the jupyter notebook `transcriptomics_analysis.ipynb`. Required data:
+* PRISM output (documentation and info at [PRISM repo](https://bitbucket.org/anthakki/prism/src/master/)):
+    * expression matrix for cancer cells 
+    * additional decomposition tables (W.tsv and G.tsv)
+* annotation data frame: information about the comparison groups and additional variables
+
+The notebook allows to perform the following analysis:
+* Data loading
+* Cell type analysis
+* Differential expression analysis (DEA)
+* Transcription factor activity inference (via CollecTRI)
+* Pathway activity inference (via PROGENy)
+* Gene Set Enrichment Analysis (GSEA)
+
+NB: for this step no example results are shown since expression data cannot be shared.
